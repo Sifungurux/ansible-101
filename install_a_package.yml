@@ -9,7 +9,7 @@
         state: latest           # options can also be. installed, absent and specific version. Latest installs latest version of the package
         update_cache: yes       # Updating the apt repository cache
     
-    - name: Installere openvpn til sidste version
+    - name: Installere Webserver binaries til sidste version
       apt:
         pkg: {{ item }}         # Item is a defined varible. Only {{ item }} is allowed. 
           state: latest         # options can also be. installed, absent and specific version. Latest installs latest version of the package
