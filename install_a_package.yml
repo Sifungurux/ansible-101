@@ -3,7 +3,7 @@
 - host: all
   become: yes
   - tasks:
-    - name: Installere openvpn til sidste version
+    - name: Installere curl til sidste version
       apt:
         pkg: curl               # Package to be installed
         state: latest           # options can also be. installed, absent and specific version. Latest installs latest version of the package
